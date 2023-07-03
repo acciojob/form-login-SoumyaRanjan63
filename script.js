@@ -1,14 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('myForm');
-  form.addEventListener('submit', getFormValue);
-});
+function getFormvalue() {
+	 
+        var divElement = document.createElement('div');
+        divElement.setAttribute('id', 'abc');
+        document.body.appendChild(divElement);
 
-function getFormValue(event) {
-  event.preventDefault();
-
-  const form = document.getElementById('myForm');
-  const firstName = form.elements.firstName.value;
-  const lastName = form.elements.lastName.value;
-
-  alert(`First Name: ${firstName}\nLast Name: ${lastName}`);
 }
